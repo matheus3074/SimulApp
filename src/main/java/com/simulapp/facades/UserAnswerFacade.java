@@ -1,9 +1,7 @@
 package com.simulapp.facades;
 
 import com.simulapp.applications.UserAnswerApplication;
-import com.simulapp.applications.UsersApplication;
 import com.simulapp.entities.UserAnswer;
-import com.simulapp.entities.Users;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -17,7 +15,7 @@ public class UserAnswerFacade {
     }
 
     public List<UserAnswer> listUserAnswer() {
-        return userAnswerApplication.obterTodosuserAnswer();
+        return userAnswerApplication.obterTodosUserAnswer();
     }
 
     public UserAnswer getUserAnswerForId(int id) {

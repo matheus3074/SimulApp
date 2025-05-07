@@ -1,16 +1,14 @@
 package com.simulapp.controllers;
 
 import com.simulapp.entities.UserAnswer;
-import com.simulapp.entities.Users;
 import com.simulapp.facades.UserAnswerFacade;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/usersAnswer")
 public class UserAnswerController {
     private final UserAnswerFacade userAnswerFacade;
 
@@ -24,7 +22,7 @@ public class UserAnswerController {
     }
 
     @GetMapping("/{id}")
-    public Users getUserAnswer(@PathVariable int id) {
+    public UserAnswer getUserAnswer(@PathVariable int id) {
         return userAnswerFacade.getUserAnswerForId(id);
     }
 

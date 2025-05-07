@@ -14,7 +14,7 @@ public class UserAnswerApplication {
         this.userAnswerRepository = userAnswerRepository;
     }
 
-    public List<UserAnswer> obterTodosuserAnswer() {
+    public List<UserAnswer> obterTodosUserAnswer() {
         return userAnswerRepository.buscar();
     }
 
